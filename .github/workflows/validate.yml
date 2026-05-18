@@ -1,0 +1,47 @@
+name: Validate Notebooks
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install rdkit xgboost lightgbm scikit-learn pandas numpy matplotlib seaborn nbformat nbconvert jupyter
+
+      - name: Check notebook syntax
+        run: |
+          python -c "
+          import nbformat, glob, sys
+          notebooks = glob.glob('notebooks/**/*.ipynb', recursive=True)
+          print(f'Checking {len(notebooks)} notebooks...')
+          errors = []
+          for nb_path in notebooks:
+              try:
+                  with open(nb_path) as f:
+                      nb = nbformat.read(f, as_version=4)
+                  nbformat.validate(nb)
+                  print(f'  OK: {nb_path}')
+              except Exception as e:
+                  errors.append(f'{nb_path}: {e}')
+                  print(f'  FAIL: {nb_path}: {e}')
+          if errors:
+              sys.exit(1)
+          print('All notebooks valid.')
+          "
+
+      - name: Check requirements.txt exists
+        run: test -f requirements.txt && echo "requirements.txt found"

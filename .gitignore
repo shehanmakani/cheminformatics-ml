@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+*.so
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Virtual environments
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Data — large files go in datasets/ only, never root
+*.parquet
+*.h5
+*.hdf5
+
+# Secrets — never commit these
+.env.local
+*.pem
+*.key
+secrets.json
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs
+*.log
+logs/
+
+# Model artifacts (too large for git — use git-lfs or kaggle datasets)
+*.pkl
+*.joblib
+*.model
+*.bin
+saved_models/
