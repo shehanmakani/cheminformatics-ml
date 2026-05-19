@@ -196,7 +196,7 @@ Each notebook folder is self-contained — data, figures, and notebook all toget
 
 ## Background
 
-I run **ChemeNova LLC** — an AI-driven specialty chemical formulation company building [IntelliForm™](https://chemenova.com/intelliform), a formulation intelligence platform. I also operate **ChemRich Global** (ChemRich USA + ChemRich India), a specialty chemicals distribution business with products including D-Limonene, Calcium Chloride Dihydrate, and IPA 99%.
+I run **ChemeNova LLC** — an AI-driven specialty chemical formulation company building [IntelliForm™](https://chemenova.com/intelliform), a formulation intelligence platform. I also operate **ChemRich Global** (ChemRich USA + ChemRich India), a specialty chemicals distribution business.
 
 These notebooks are the public-facing side of the ML work that underpins IntelliForm™. The domain expertise is real — I formulate for personal care, industrial, and agrochemical applications. When I say LogP dominates solubility screening, that is the decision I make before choosing a surfactant system.
 
