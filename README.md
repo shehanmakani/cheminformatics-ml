@@ -1,6 +1,6 @@
 # Cheminformatics & ML Notebooks
 
-**Author:** Shehan Makani — Founder & CEO, [ChemeNova LLC](https://chemenova.com) | NJIT Tech MBA  
+**Author:** Shehan Makani — Co-Founder & CEO, [ChemeNova LLC](https://chemenova.com) | NJIT Tech MBA  
 **Kaggle:** [kaggle.com/shehanmakani](https://www.kaggle.com/shehanmakani)  
 **LinkedIn:** [linkedin.com/in/shehanmakani](https://linkedin.com/in/shehanmakani)
 
