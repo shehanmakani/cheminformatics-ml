@@ -1,0 +1,51 @@
+{
+  "radiation_features": [
+    "planarity",
+    "pi_extent",
+    "fluoro_sub",
+    "frac_csp3",
+    "mw",
+    "arom_rings",
+    "initial_bandgap",
+    "proton_fluence_log",
+    "electron_fluence_log",
+    "proton_energy_mev",
+    "electron_energy_mev",
+    "total_dose_krad_log",
+    "mission_years"
+  ],
+  "delta_bg_r2": 0.7510065056244357,
+  "eff_ret_r2": 0.78183799483336,
+  "qualification_results": [
+    {
+      "material": "Coronene-F4 (PAH+fluoro)",
+      "delta_bg": 0.05976036640140897,
+      "eff_retention": 0.8706019453642648
+    },
+    {
+      "material": "PDI-Cl2 (rylene+chloro)",
+      "delta_bg": 0.07901965023663657,
+      "eff_retention": 0.8322511364655505
+    },
+    {
+      "material": "Pentacene (unsubstituted)",
+      "delta_bg": 0.12854599494445146,
+      "eff_retention": 0.7794265717043727
+    },
+    {
+      "material": "IT4F-NFA (fluorinated NFA)",
+      "delta_bg": 0.09373775869575934,
+      "eff_retention": 0.8247242018423637
+    },
+    {
+      "material": "Polyimide-base (rad-hard)",
+      "delta_bg": 0.1426068832003534,
+      "eff_retention": 0.7313465233257008
+    },
+    {
+      "material": "P3HT (unprotected polymer)",
+      "delta_bg": 0.15280500627062332,
+      "eff_retention": 0.7018638765735699
+    }
+  ]
+}
